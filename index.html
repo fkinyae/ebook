@@ -349,8 +349,9 @@
                 <div class="col-lg-6">
                     <form>
                         <label for="email" class="form-label">Email Address:</label>
+                        <div class="mb-4 input-group">
                         <input type="email" class="form-control" id="email" placeholder="kin@email.com">
-
+                        </div>
                         <label for="name" class="form-label">Name:</label>
                         <input type="text" class="form-control" id="name" placeholder="e.g. Kin">
 
@@ -360,9 +361,13 @@
                             <option value="content">Content query</option>
                             <option value="other">Other query</option>
                         </select>
-
-                        <label for="query" class="form-label">Your query....</label>
-                        <textarea name="" id="query" class="form-control" cols="30" rows="10" style="height: 140px"></textarea>
+                        <div class="form-floating mb-3 mt-3">
+                            <textarea name="" id="query" class="form-control" cols="30" rows="10" style="height: 140px"></textarea>
+                            <label for="query">Your query....</label>
+                        </div>
+                        <div class="mb-4 text-center">
+                            <button type="submit" class="btn btn-secondary">Submit</button>
+                        </div>
                     </form>
                 </div>
             </div>
